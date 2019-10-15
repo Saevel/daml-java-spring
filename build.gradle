@@ -14,6 +14,8 @@ repositories {
 
 dependencies {
     compile group: 'com.daml.ledger', name: 'bindings-java', version: '100.13.29'
+    compile group: 'com.daml.ledger', name: 'bindings-rxjava', version: '100.13.29'
+
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-webflux', version: '2.1.9.RELEASE'
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
