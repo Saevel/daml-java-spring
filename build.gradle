@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.1.9.RELEASE'
+}
+
+group 'prv.saevel'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.daml.ledger', name: 'bindings-java', version: '100.13.29'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-webflux', version: '2.1.9.RELEASE'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
